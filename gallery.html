@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - ProTek Stone Shield Projects</title>
+    <meta name="description" content="Explore our portfolio of successful stone protection projects. View before and after photos, project videos, and see ProTek protection in action.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-fixed">
+        <div class="nav-container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-text">
+                        <span class="logo-pro">Pro</span>
+                        <span class="logo-tek">Tek</span>
+                    </div>
+                    <div class="logo-subtitle">STONE SHIELD</div>
+                </a>
+
+                <div class="nav-links-desktop">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="process.html" class="nav-link">Process</a>
+                    <a href="gallery.html" class="nav-link active">Gallery</a>
+                    <a href="faq.html" class="nav-link">FAQ</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+
+                <div class="nav-cta">
+                    <a href="contact.html" class="btn-primary">Contact</a>
+                    <a href="tel:+16044464384" class="btn-outline">📞 Call Now</a>
+                </div>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <svg class="menu-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                    <svg class="close-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="display: none;">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="nav-mobile" id="mobileMenu">
+                <div class="mobile-nav-content">
+                    <a href="index.html" class="mobile-nav-link">Home</a>
+                    <a href="about.html" class="mobile-nav-link">About</a>
+                    <a href="services.html" class="mobile-nav-link">Services</a>
+                    <a href="process.html" class="mobile-nav-link">Process</a>
+                    <a href="gallery.html" class="mobile-nav-link active">Gallery</a>
+                    <a href="faq.html" class="mobile-nav-link">FAQ</a>
+                    <a href="contact.html" class="mobile-nav-link">Contact</a>
+                    <div class="mobile-nav-cta">
+                        <a href="contact.html" class="btn-primary">Contact</a>
+                        <a href="tel:+16044464384" class="btn-outline">📞 Call Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main style="padding-top: 4rem;">
+        <!-- Hero Section -->
+        <section class="cta-section">
+            <div class="container cta-content">
+                <h1 style="font-size: 3rem; margin-bottom: 1.5rem;">Our Gallery</h1>
+                <p style="font-size: 1.25rem;">Explore our portfolio of successful stone protection projects across various environments.</p>
+            </div>
+        </section>
+
+        <!-- Category Filter -->
+        <section style="padding: 3rem 0; background: var(--background);">
+            <div class="container">
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-bottom: 3rem;">
+                    <button class="filter-btn active" data-filter="all" style="padding: 0.75rem 1.5rem; border-radius: var(--radius); font-weight: 600; transition: var(--transition-smooth); background: var(--primary); color: white; border: none; cursor: pointer;">All Projects</button>
+                    <button class="filter-btn" data-filter="kitchen" style="padding: 0.75rem 1.5rem; border-radius: var(--radius); font-weight: 600; transition: var(--transition-smooth); background: var(--card); color: var(--muted-foreground); border: none; cursor: pointer;">Kitchen Countertops</button>
+                    <button class="filter-btn" data-filter="bathroom" style="padding: 0.75rem 1.5rem; border-radius: var(--radius); font-weight: 600; transition: var(--transition-smooth); background: var(--card); color: var(--muted-foreground); border: none; cursor: pointer;">Bathroom Vanities</button>
+                    <button class="filter-btn" data-filter="commercial" style="padding: 0.75rem 1.5rem; border-radius: var(--radius); font-weight: 600; transition: var(--transition-smooth); background: var(--card); color: var(--muted-foreground); border: none; cursor: pointer;">Commercial</button>
+                    <button class="filter-btn" data-filter="restoration" style="padding: 0.75rem 1.5rem; border-radius: var(--radius); font-weight: 600; transition: var(--transition-smooth); background: var(--card); color: var(--muted-foreground); border: none; cursor: pointer;">Restoration</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Grid -->
+        <section style="padding-bottom: 5rem; background: var(--background);">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+                    <div class="gallery-item" data-category="kitchen" style="border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-soft); transition: var(--transition-smooth); position: relative; cursor: pointer;">
+                        <img src="https://images.unsplash.com/photo-1556912173-46c336c7fd55?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Modern Kitchen Island" style="width: 100%; height: 16rem; object-fit: cover; transition: transform 0.3s ease;">
+                        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.7), transparent, transparent); opacity: 0; transition: opacity 0.3s ease;">
+                            <div style="position: absolute; bottom: 1rem; left: 1rem; right: 1rem;">
+                                <h3 style="font-size: 1.25rem; font-weight: bold; color: white; margin-bottom: 0.5rem;">Modern Kitchen Island</h3>
+                                <p style="color: #d1d5db;">Granite countertop with ProTek protection</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="bathroom" style="border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-soft); transition: var(--transition-smooth); position: relative; cursor: pointer;">
+                        <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Luxury Bathroom Vanity" style="width: 100%; height: 16rem; object-fit: cover; transition: transform 0.3s ease;">
+                        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.7), transparent, transparent); opacity: 0; transition: opacity 0.3s ease;">
+                            <div style="position: absolute; bottom: 1rem; left: 1rem; right: 1rem;">
+                                <h3 style="font-size: 1.25rem; font-weight: bold; color: white; margin-bottom: 0.5rem;">Luxury Bathroom Vanity</h3>
+                                <p style="color: #d1d5db;">Marble vanity with matte finish protection</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="commercial" style="border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-soft); transition: var(--transition-smooth); position: relative; cursor: pointer;">
+                        <img src="https://images.unsplash.com/photo-1564540583653-0ca7c885e16b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Hotel Lobby Reception" style="width: 100%; height: 16rem; object-fit: cover; transition: transform 0.3s ease;">
+                        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.7), transparent, transparent); opacity: 0; transition: opacity 0.3s ease;">
+                            <div style="position: absolute; bottom: 1rem; left: 1rem; right: 1rem;">
+                                <h3 style="font-size: 1.25rem; font-weight: bold; color: white; margin-bottom: 0.5rem;">Hotel Lobby Reception</h3>
+                                <p style="color: #d1d5db;">High-traffic commercial installation</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="kitchen" style="border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-soft); transition: var(--transition-smooth); position: relative; cursor: pointer;">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Traditional Kitchen" style="width: 100%; height: 16rem; object-fit: cover; transition: transform 0.3s ease;">
+                        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.7), transparent, transparent); opacity: 0; transition: opacity 0.3s ease;">
+                            <div style="position: absolute; bottom: 1rem; left: 1rem; right: 1rem;">
+                                <h3 style="font-size: 1.25rem; font-weight: bold; color: white; margin-bottom: 0.5rem;">Traditional Kitchen</h3>
+                                <p style="color: #d1d5db;">Quartz countertops with gloss protection</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="restoration" style="border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-soft); transition: var(--transition-smooth); position: relative; cursor: pointer;">
+                        <img src="https://images.unsplash.com/photo-1556912167-f556f1f39fdf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Marble Restoration" style="width: 100%; height: 16rem; object-fit: cover; transition: transform 0.3s ease;">
+                        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.7), transparent, transparent); opacity: 0; transition: opacity 0.3s ease;">
+                            <div style="position: absolute; bottom: 1rem; left: 1rem; right: 1rem;">
+                                <h3 style="font-size: 1.25rem; font-weight: bold; color: white; margin-bottom: 0.5rem;">Marble Restoration</h3>
+                                <p style="color: #d1d5db;">Before and after restoration project</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="bathroom" style="border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-soft); transition: var(--transition-smooth); position: relative; cursor: pointer;">
+                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Spa-Style Bathroom" style="width: 100%; height: 16rem; object-fit: cover; transition: transform 0.3s ease;">
+                        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.7), transparent, transparent); opacity: 0; transition: opacity 0.3s ease;">
+                            <div style="position: absolute; bottom: 1rem; left: 1rem; right: 1rem;">
+                                <h3 style="font-size: 1.25rem; font-weight: bold; color: white; margin-bottom: 0.5rem;">Spa-Style Bathroom</h3>
+                                <p style="color: #d1d5db;">Natural stone shower with protection</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Gallery Section -->
+        <section class="curved-section">
+            <div class="container section-content">
+                <div class="section-header" style="color: var(--protek-darkest);">
+                    <h2 style="color: var(--protek-darkest);">Project Videos</h2>
+                    <p style="color: var(--protek-gray);">Watch our professional installation process and see the results</p>
+                </div>
+
+                <div style="display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                    <div style="display: flex; flex-direction: column; gap: 1rem;">
+                        <h3 style="font-size: 1.25rem; font-weight: bold; color: var(--protek-darkest);">Kitchen Installation</h3>
+                        <div class="video-container">
+                            <video controls poster="https://images.unsplash.com/photo-1556912173-46c336c7fd55?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80">
+                                <source src="/videos/kitchen-install.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 1rem;">
+                        <h3 style="font-size: 1.25rem; font-weight: bold; color: var(--protek-darkest);">Stain Test Demo</h3>
+                        <div class="video-container">
+                            <video controls poster="https://images.unsplash.com/photo-1556912167-f556f1f39fdf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80">
+                                <source src="/videos/stain-test.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 1rem;">
+                        <h3 style="font-size: 1.25rem; font-weight: bold; color: var(--protek-darkest);">Commercial Project</h3>
+                        <div class="video-container">
+                            <video controls poster="https://images.unsplash.com/photo-1564540583653-0ca7c885e16b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80">
+                                <source src="/videos/commercial-project.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Before/After Section -->
+        <section style="padding: 5rem 0; background: var(--background);">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Before & After</h2>
+                    <p>See the dramatic difference ProTek protection makes</p>
+                </div>
+
+                <div style="display: grid; gap: 3rem; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));">
+                    <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                        <h3 style="font-size: 1.5rem; font-weight: bold; color: var(--protek-white); text-align: center;">Before Protection</h3>
+                        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Before protection - stained surface" style="width: 100%; border-radius: var(--radius); box-shadow: var(--shadow-elegant);">
+                        <ul style="color: var(--muted-foreground); display: flex; flex-direction: column; gap: 0.5rem;">
+                            <li style="display: flex; align-items: center;"><span style="width: 0.5rem; height: 0.5rem; background: #ef4444; border-radius: 50%; margin-right: 0.75rem;"></span>Visible stains and etching</li>
+                            <li style="display: flex; align-items: center;"><span style="width: 0.5rem; height: 0.5rem; background: #ef4444; border-radius: 50%; margin-right: 0.75rem;"></span>Dull, worn appearance</li>
+                            <li style="display: flex; align-items: center;"><span style="width: 0.5rem; height: 0.5rem; background: #ef4444; border-radius: 50%; margin-right: 0.75rem;"></span>Requires frequent maintenance</li>
+                        </ul>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                        <h3 style="font-size: 1.5rem; font-weight: bold; color: var(--protek-white); text-align: center;">After ProTek</h3>
+                        <img src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="After protection - pristine surface" style="width: 100%; border-radius: var(--radius); box-shadow: var(--shadow-elegant);">
+                        <ul style="color: var(--muted-foreground); display: flex; flex-direction: column; gap: 0.5rem;">
+                            <li style="display: flex; align-items: center;"><span style="width: 0.5rem; height: 0.5rem; background: #10b981; border-radius: 50%; margin-right: 0.75rem;"></span>Completely stain-proof</li>
+                            <li style="display: flex; align-items: center;"><span style="width: 0.5rem; height: 0.5rem; background: #10b981; border-radius: 50%; margin-right: 0.75rem;"></span>Brilliant, lasting shine</li>
+                            <li style="display: flex; align-items: center;"><span style="width: 0.5rem; height: 0.5rem; background: #10b981; border-radius: 50%; margin-right: 0.75rem;"></span>Minimal maintenance required</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
